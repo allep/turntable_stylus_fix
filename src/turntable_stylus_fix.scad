@@ -7,9 +7,10 @@
 $fn = 50;
 
 // Radius + approx 2% tolerance
-HOLE_RADIUS = 1.45;
+HOLE_RADIUS = 1.6;
 THICKNESS = 3.5;
 SEPARATION = 10.7;
+WALL_SEPARATION = 11.5;
 SIZE_X = 14.0;
 SIZE_Y = 19.0;
 WALL_X = 5.0;
@@ -53,9 +54,9 @@ difference()
     union()
     {
         fix_base(SIZE_X, SIZE_Y, THICKNESS);
-        translate([SIZE_X / 2 - WALL_X / 2, SEPARATION / 2, THICKNESS])
+        translate([SIZE_X / 2 - WALL_X / 2, WALL_SEPARATION / 2, THICKNESS])
         fix_wall(WALL_X, WALL_Y, WALL_Z);
-        translate([SIZE_X / 2 - WALL_X / 2, - SEPARATION / 2, THICKNESS])
+        translate([SIZE_X / 2 - WALL_X / 2, - WALL_SEPARATION / 2, THICKNESS])
         fix_wall(WALL_X, WALL_Y, WALL_Z);
     }
     screw_holes(HOLE_RADIUS, SEPARATION, THICKNESS);
