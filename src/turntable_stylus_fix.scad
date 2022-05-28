@@ -6,10 +6,10 @@
 // Constants
 $fn = 50;
 
-// Radius + approx 1% tolerance
-HOLE_RADIUS = 1.3;
+// Radius + approx 2% tolerance
+HOLE_RADIUS = 1.45;
 THICKNESS = 3.5;
-SEPARATION = 10.1;
+SEPARATION = 10.7;
 SIZE_X = 14.0;
 SIZE_Y = 19.0;
 WALL_X = 5.0;
